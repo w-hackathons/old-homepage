@@ -3,3 +3,17 @@
     color: red;
   }
 }
+
+.colorful{
+  p {
+    background-color: #bbb;
+  }
+
+  span:nth-child(7n+1) { color: red; }
+  span:nth-child(7n+2) { color: orange; }
+  span:nth-child(7n+3) { color: yellow; }
+  span:nth-child(7n+4) { color: greenyellow; }
+  span:nth-child(7n+5) { color: blue; }
+  span:nth-child(7n+6) { color: purple; }
+  span:nth-child(7n) { color: darkviolet; }
+} 

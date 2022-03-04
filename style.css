@@ -1,4 +1,36 @@
 .title h1 {
   color: red;
 }
+
+.colorful p {
+  background-color: #bbb;
+}
+
+.colorful span:nth-child(7n+1) {
+  color: red;
+}
+
+.colorful span:nth-child(7n+2) {
+  color: orange;
+}
+
+.colorful span:nth-child(7n+3) {
+  color: yellow;
+}
+
+.colorful span:nth-child(7n+4) {
+  color: greenyellow;
+}
+
+.colorful span:nth-child(7n+5) {
+  color: blue;
+}
+
+.colorful span:nth-child(7n+6) {
+  color: purple;
+}
+
+.colorful span:nth-child(7n) {
+  color: darkviolet;
+}
 /*# sourceMappingURL=style.css.map */

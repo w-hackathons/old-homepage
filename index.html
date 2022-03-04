@@ -11,6 +11,22 @@
   <div class="title">
     <h1>ほむぺ！</h1>
   </div>
+  <div class="colorful">
+    <p>ゲーミング文字列</p>
+  </div>
   <script src="index.js"></script>
+
+  <!-- ▼jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+
+  <!-- ▼今回のスクリプト本体 -->
+  <script type="text/javascript">
+    $(".colorful").children().addBack().contents().each(function(){
+      if (this.nodeType == 3) {
+          var $this = $(this);
+          $this.replaceWith($this.text().replace(/(\S)/g, "<span>$&</span>"));
+      }
+    });
+</script>
 </body>
 </html>
