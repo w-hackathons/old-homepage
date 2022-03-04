@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .title h1 {
   color: red;
 }
@@ -32,5 +33,48 @@
 
 .colorful span:nth-child(7n) {
   color: darkviolet;
+}
+
+.gaming {
+  /* 横長で虹色を作る */
+  background: -webkit-gradient(linear, left top, right top, from(Magenta), color-stop(yellow), color-stop(Cyan), to(Magenta)) 0% center/200%;
+  background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+  -webkit-animation: gaming 0.5s linear infinite;
+          animation: gaming 0.5s linear infinite;
+}
+
+@-webkit-keyframes gaming {
+  /* backgroundを移動させる */
+  100% {
+    background-position-x: 200%;
+  }
+}
+
+@keyframes gaming {
+  /* backgroundを移動させる */
+  100% {
+    background-position-x: 200%;
+  }
+}
+
+.reverse-gaming {
+  /* 横長で虹色を作る */
+  background: -webkit-gradient(linear, left top, right top, from(Magenta), color-stop(yellow), color-stop(Cyan), to(Magenta)) 0% center/200%;
+  background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+  animation: gaming 0.5s linear reverse infinite;
+}
+
+@-webkit-keyframes reverse-gaming {
+  /* backgroundを移動させる */
+  100% {
+    background-position-x: 200%;
+  }
+}
+
+@keyframes reverse-gaming {
+  /* backgroundを移動させる */
+  100% {
+    background-position-x: 200%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
