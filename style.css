@@ -57,17 +57,6 @@
   }
 }
 
-.gaming-text {
-  /* 横長で虹色を作る */
-  color: #FF8C00;
-  background: -webkit-gradient(linear, left top, right top, from(Magenta), color-stop(yellow), color-stop(Cyan), to(Magenta)) 0% center/200%;
-  background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
-  -webkit-animation: gaming 0.5s linear infinite;
-          animation: gaming 0.5s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .reverse-gaming {
   /* 横長で虹色を作る */
   background: -webkit-gradient(linear, left top, right top, from(Magenta), color-stop(yellow), color-stop(Cyan), to(Magenta)) 0% center/200%;
@@ -87,14 +76,5 @@
   100% {
     background-position-x: 200%;
   }
-}
-
-.pop-font {
-  font-family: 'HGS創英角ﾎﾟｯﾌﾟ体';
-  font-size: 3rem;
-}
-
-body {
-  background-image: url("back.png");
 }
 /*# sourceMappingURL=style.css.map */
