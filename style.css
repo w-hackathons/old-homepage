@@ -93,4 +93,8 @@
   font-family: 'HGS創英角ﾎﾟｯﾌﾟ体';
   font-size: 3rem;
 }
+
+body {
+  background-image: url("back.png");
+}
 /*# sourceMappingURL=style.css.map */
