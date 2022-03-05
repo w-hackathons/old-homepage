@@ -89,6 +89,16 @@
   }
 }
 
+.countdown p .colored {
+  color: magenta;
+  background-color: #00ff00;
+}
+
+.countdown p .colored span {
+  font-size: 2em;
+  background-color: #00ff00;
+}
+
 .pop-font {
   font-family: 'HGS創英角ﾎﾟｯﾌﾟ体';
   font-size: 3rem;

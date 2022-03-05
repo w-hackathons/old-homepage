@@ -20,15 +20,22 @@
   <div class="reverse-gaming">
     <p>キャッキャ</p>
   </div>
+  <div class="countdown">
+    <p>2024年1月1日まで<br />
+      <span class="colored"><span id="day"></span>日 <span id="hr"></span>時間 <span id="min"></span>分 <span id="sec"></span>秒</span></p>
+  </div>
+
   <div class="gaming-text pop-font">
     <p>死にたい＼(^o^)／</p>
   </div>
 
   <script src="index.js"></script>
+  <script src="countdown.js"></script>
   <script type="text/javascript" src="Tinkerbell.js"></script>
 
   <!-- ▼jQueryの読み込み -->
   <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.8/dayjs.min.js" integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- ▼今回のスクリプト本体 -->
   <script type="text/javascript">
@@ -38,6 +45,6 @@
           $this.replaceWith($this.text().replace(/(\S)/g, "<span>$&</span>"));
       }
     });
-</script>
+  </script>
 </body>
 </html>
